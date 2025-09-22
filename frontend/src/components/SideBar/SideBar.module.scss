@@ -1,0 +1,126 @@
+.wrapper {
+  width: 250px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid #e5e5e5;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+
+  span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  button {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  button:first-child {
+    background-color: #0a66ff;
+    color: #fff;
+
+    &:hover {
+      background-color: #004fc2;
+    }
+  }
+}
+
+.main-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f5f7fa;
+    }
+
+    svg {
+      font-size: 18px;
+      color: #666;
+    }
+  }
+}
+
+.line {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 20px 0;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  span {
+    font-size: 14px;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f5f7fa;
+    }
+
+    svg {
+      font-size: 18px;
+      color: #666;
+    }
+  }
+}

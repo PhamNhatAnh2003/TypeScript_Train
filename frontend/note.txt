@@ -1,0 +1,102 @@
+npm create vite@latest frontend -- --template react-ts
+cd frontend
+npm install
+npm run dev
+
+
+
+
+
+npm install react-router-dom
+npm install --save-dev @types/react-router-dom
+npm install axios
+npm install @reduxjs/toolkit react-redux
+npm install --save-dev @types/react-redux
+
+
+
+
+
+// Cai dat alias
+npm install --save-dev @types/node
+npm install path
+* Cau hinh vite.config.ts
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import * as path from "path";
+import { fileURLToPath } from "url";
+
+// Lấy __dirname theo chuẩn ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@components": path.resolve(__dirname, "src/components"),
+    },
+  },
+});
+
+
+
+
+
+
+// tsconfig.app.json va tsconfig.node.json
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": ["vite.config.ts"]
+}
+
+
+
+
+
+
+
+// Cai dat scss
+npm install sass
+npm i classnames
+npm install normalize.css
+
+
+
+
+// Fontawesome
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
+
+
+// Thu vien ho tro
+npm i react-multi-carousel

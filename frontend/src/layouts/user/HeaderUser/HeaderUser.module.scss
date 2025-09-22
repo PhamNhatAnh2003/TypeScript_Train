@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f40707;
+  padding: 10px 20px;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+
+  .logo {
+    font-family: Pacifico;
+    padding-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+    li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #fd0404;
+      }
+    }
+  }
+}
